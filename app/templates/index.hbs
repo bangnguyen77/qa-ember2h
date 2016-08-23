@@ -4,7 +4,7 @@
 
 <h2>Questions</h2>
 {{#each model as |question|}}
-  {{question-tile question=question}}
+  {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
 {{/each}}
 
 {{new-question save="save"}}
