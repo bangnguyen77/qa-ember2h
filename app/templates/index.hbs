@@ -1,10 +1,14 @@
 <h1> Welcome to Message Board </h1>
 
 <p>We hope you find an answer here. If not, type your question</p>
+
 <h2>Questions</h2>
 {{#each model as |question|}}
   {{question-tile question=question}}
 {{/each}}
+
+{{new-question save="save"}}
+
 <hr>
 {{#link-to 'about'}}About{{/link-to}} |
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}} |
