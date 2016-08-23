@@ -1,7 +1,10 @@
-<h1> Welcome to Super Rentals </h1>
+<h1> Welcome to Message Board </h1>
 
-We hope you find exactly what you're looking for in a place to stay.
-
+<p>We hope you find an answer here. If not, type your question</p>
+<h2>Questions</h2>
+{{#each model as |question|}}
+  {{question-tile question=question}}
+{{/each}}
 <hr>
 {{#link-to 'about'}}About{{/link-to}} |
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}} |
