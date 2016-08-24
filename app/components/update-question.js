@@ -15,6 +15,9 @@ export default Ember.Component.extend({
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', model, params);
+      this.set('author', "");
+      this.set('question', "");
+      this.set('notes', "");
     }
   }
 });

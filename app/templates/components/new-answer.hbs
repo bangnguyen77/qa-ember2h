@@ -1,0 +1,11 @@
+<h2>Add an Answer</h2>
+<form>
+  <div class="form-group">
+    {{input value=author id="author" placeholder="Your Name"}}
+  </div>
+  <div class="form-group">
+    {{input value=content id="content" placeholder="Your Answer"}}
+  </div>
+
+  <button {{action "save"}} class="btn btn-info">Save</button>
+</form>
